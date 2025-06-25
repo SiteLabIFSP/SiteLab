@@ -1,0 +1,274 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.conteiner{
+    display: grid;
+    grid-template-rows: 130px 65px 1fr 100px 50px;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6092a6;
+    text-shadow: 2px 3px #19475a;
+    background-color: #012340;
+    border-bottom: 13px solid #001d35;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.nav{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #010d26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #010d26;
+    color: #6092a6;
+    font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contato {
+    margin-top: 20px;
+    color: #6092a6;
+    font-size: 1.2rem;
+}
+.contato a {
+    color: #adc4cd;
+    text-decoration: none;
+    margin-left: 8px;
+}
+.contato a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.contato i {
+    margin-right: 6px;
+    color: #ffffff;
+}
+.button{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background-color: #010d26;
+}
+.footer{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: #012340;
+    color: #6092a6;
+}
+.itemcentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 130px;
+    flex-wrap: wrap;
+}
+li{
+    font-size: 1rem;
+    color: #265d73;
+}
+.botao1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: #adc4cd;
+    color: #265d73;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.botao1:hover {
+    background-color: #bdcfd6;
+    color: #498096;
+    transform: scale(1.05);
+}
+.menu-botao {
+    background-color: transparent;
+    border: none;
+    color: #265d73;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.2s;
+}
+.menu-botao:hover {
+    color: #6092a6;
+    transform: scale(1.05);
+}
+.selecionado{
+    color: #6092a6;
+}
+.titulo-form {
+    color: #6092a6;
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #adc4cd;
+    font-size: 1rem;
+    color: #012340;
+}
+.formulario button {
+    padding: 10px;
+    background-color: #265d73;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.formulario button:hover {
+    background-color: #6092a6;
+}
+input, textarea, button, select {
+    font-family: inherit;
+}
+.mapa {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.horario, .depoimentos {
+    margin-top: 30px;
+    color: #adc4cd;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.horario h3, .depoimentos h3 {
+    color: #6092a6;
+    margin-bottom: 10px;
+}
+/* Responsivo para tablets e celulares */
+@media (max-width: 900px) {
+    .conteiner {
+        grid-template-rows: auto auto 1fr 100px 50px;
+    }
+
+    .header {
+        font-size: 2rem;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    ul {
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-botao {
+        font-size: 1rem;
+    }
+
+    .formulario {
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .mapa {
+        width: 95%;
+    }
+
+    .body {
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+
+    .botao1 {
+        font-size: 1.4rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        padding: 15px 10px;
+    }
+
+    .body {
+        font-size: 1.2rem;
+    }
+
+    .botao1 {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 0.95rem;
+    }
+
+    .formulario button {
+        font-size: 0.95rem;
+    }
+
+    .horario, .depoimentos {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,66 @@
+/* CSS geral para a página */
+html, body, .cor {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #001d35;
+  color: #ffffff;
+}
+
+.login-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  background-color: #012340;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 400px;
+}
+
+h3 {
+  color: #adc4cd;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #adc4cd;
+  font-weight: 500;
+}
+
+input.form-control {
+  background-color: #adc4cd;
+  border: none;
+  color: #001d35;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 5px #6092a6;
+  outline: none;
+}
+
+
+.btn-outline-light {
+  border: 2px solid #adc4cd;
+  color: #adc4cd;
+}
+
+.btn-outline-light:hover {
+  background-color: #adc4cd;
+  color: #001d35;
+}
+
+button.btn-outline-light {
+  padding: 2px 8px;
+  font-size: 0.9rem;
+}

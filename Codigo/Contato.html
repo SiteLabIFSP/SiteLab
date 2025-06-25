@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteLab</title>
+    <link rel="stylesheet" href="../CSS/Contato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="conteiner">
+        <header class="header itemcentro">
+            <h1>SiteLab</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="menu-botao">Início</a></li>
+                <li><a href="./Planos e Preços.html" class="menu-botao">Planos e Preços</a></li>
+                <li><a href="./Quem somos.html" class="menu-botao">Quem Somos</a></li>
+                <li><a href="./Contato.html" class="menu-botao selecionado">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="body itemcentro coluna">
+            <h1>Entre em contato conosco</h1>
+
+            <!-- Contatos -->
+            <div class="contato">
+                <p><i class="fas fa-envelope"></i> <a href="mailto:sitelab.ifsp@gmail.com">sitelab.ifsp@gmail.com</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/sitelab.ifsp/" target="_blank">@sitelab.ifsp</a></p>
+            </div>
+
+            <!-- Formulário -->
+            <h2 class="titulo-form">Deixe sua sugestão</h2>
+            <form class="formulario" action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <!-- Mapa -->
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6388.160965594135!2d-47.885040859938485!3d-21.975636720337203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8711e71fe250f%3A0xf5c8879e76e658c4!2sIFSP%20S%C3%A3o%20Carlos!5e1!3m2!1sen!2sbr!4v1750880252299!5m2!1sen!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Horário de atendimento -->
+            <div class="horario">
+                <h3>Horário de atendimento</h3>
+                <p>Segunda a sexta: 08h - 18h</p>
+                <p>Sábado: 08h - 12h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+
+            <!-- Depoimentos -->
+            <div class="depoimentos">
+                <h3>O que dizem nossos clientes</h3>
+                <p>“A SiteLab criou meu site profissional com agilidade e atenção aos detalhes!”</p>
+                <p>“Equipe muito atenciosa e prestativa. Recomendo muito!”</p>
+            </div>
+        </div>
+
+        <div class="button itemcentro">
+            <a href="./login.html" class="botao1" role="button">Seja nosso cliente</a>
+        </div>
+        <footer class="footer itemcentro">
+            © 2025 SiteLab. Todos os direitos reservados.
+        </footer>
+    </div>
+</body>
+</html>
